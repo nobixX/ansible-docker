@@ -15,6 +15,6 @@ The above command downloads a bash file from 172.16.16.65 and runs the following
 apt update -y;
 apt install git ansible -y;
 ansible --version;
-ansible-pull -U <repo name> proxmox.yml;
+ansible-pull -U https://github.com/nobixX/ansible-docker.git proxmox.yml;
   ```
 
