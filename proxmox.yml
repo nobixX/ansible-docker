@@ -1,0 +1,26 @@
+---
+
+- hosts: localhost
+  connection: localhost
+  become: true
+    
+  tasks:
+   
+    - name: update package cache
+      apt: update_cache=yes
+
+    - name: Install a list of packages
+      ansible.builtin.apt:
+         pkg:
+           - vim-nox
+           - docker.io
+           - docker-compose
+
+    - name: remove unused dependency packages
+      apt: autoremove=yes
+
+    - name: clean the local repository 
+      apt: autoclean=yes
+
+
+
