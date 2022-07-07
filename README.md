@@ -6,7 +6,7 @@ curl 172.16.16.65:8081/ansible/ | bash
   ```
 The above command downloads a bash file from 172.16.16.65 and runs the following commands instead of running one by one -->
 
-# Run the below command incase if the above command fails
+# Run these commands 
 
 1. Ansible must be installed in the environment
 
