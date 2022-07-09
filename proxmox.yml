@@ -10,10 +10,10 @@
 
     - name: Install a list of packages
       ansible.builtin.apt:
-      pkg:
-           - vim-nox
-           - docker.io
-           - docker-compose
+        pkg:
+        - vim-nox
+        - docker.io
+        - docker-compose
 
     - name: remove unused dependency packages
       apt: autoremove=yes
