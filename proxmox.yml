@@ -14,7 +14,6 @@
            - vim-nox
            - docker.io
            - docker-compose
-         state: present
 
     - name: remove unused dependency packages
       apt: autoremove=yes
